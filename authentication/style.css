@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    /* -----COLORS---- */
+    --dark-color: #003406;
+    --dark-color-light: #00e606;
+    --white-color: #ffffff;
+    --yellow-color: #ffb700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* ------NAVBAR SECTION */
+.top_bar{
+    height: 40px;
+    width: 100%;
+    background-color: var(--dark-color);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.top_h2{
+    color: var(--white-color);
+    font-size: .2rem;
+}
+.hr{
+    width: 10%;
+    margin-top: 40px;
+    position: absolute;
+    position: fixed;
+}
+.navbar{
+    height: 12vh;
+    width: 80%;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-left: 135px;
+    justify-content: space-between;
+    padding: 0 18px 0 12px;
+    position: fixed;
+    box-shadow: #003406 2px 2px 2px;
+    z-index: 2;
+}
+.nav_logo{
+    width: 150px;
+}
+.nav_links{
+    display: flex;
+    align-items: center;
+}
+.nav_links li{
+    list-style: none;
+}
+.nav_links li a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 10px;
+    border-radius: 30px;
+    transition: 0.2s;
+    padding: 8px 18px;
+    margin: 0 2px;
+
+
+}
+.nav_links li a:hover{
+    transition: all .3s;
+    color: var(--yellow-color);
+}
+.nav_links li a:active{
+    background: var(--dark-color);
+    columns: #fff;
+}
+
+
+.container{
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(00,34,06);
+    background: linear-gradient(40deg, rgb#003406, rgb #ffb700, rgb#ffffff);
+    column-gap: 30px;
+}
+
+.form{
+    background: white;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 7px;
+    position: absolute;
+    margin-top: 80px;
+
+}
+
+header{
+    font-size: 26px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+
+form{
+    margin-top: 20px;
+}
+
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.field input{
+    outline: none;
+    border: 1px solid #cacaca;
+    padding: 0 15px;
+}
+
+.field input:focus{
+    border-color: var(--dark-color) var(--dark-color)  var(--yellow-color) var(--dark-color) ; 
+}
+
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+    transform: translateY(-50%);
+}
+
+.field button{
+    color:#fff;
+    background-color: var(--dark-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.field button:hover{
+    background-color: var(--yellow-color);
+}
+
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-link span,
+.form-link a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+
+.form a {
+    text-decoration: none;
+    color: #0171d3;
+}
+
+.form-content a:hover{
+    text-decoration: underline;
+}
+
+.line{
+    position: relative;
+    background-color: var(--yellow-color);
+    margin: 36px 0;
+    height: 1px;
+    width: 100%;
+}
+
+.line::before{
+    content: 'or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    color: #8b8b8b;
+    padding: 0px 15px;
+    transform: translate(-50%, -50%);
+}
+
+.media-options a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.facebook{
+    color: #fff;
+    background-color: var(--yellow-color);
+}
+
+a.facebook .facebook-icon{
+    height: 28px;
+    width: 28px;
+    color: #0171d3;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.none{
+  display: none;
+}
+
+.facebook-icon{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+a.google{
+    border: 1px solid #cacaca;
+}
+
+a.google span{
+    font-weight: 500;
+    opacity: 0.6;
+    color: #232836;
+}
+
+@media screen and (max-width:400px) {
+    .form{
+        margin: 20px 10px;
+    }
+    .navbar{
+        
+        display: none;
+        
+    }
+}
+
+
+
+
+
+
+
+

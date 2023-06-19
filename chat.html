@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        drift.on('ready',function(api, payload) {
+         // your code goes here
+        })
+        </script>
+    <!-- Start of Async Drift Code -->
+<script>
+    "use strict";
+    
+    !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+          var i = document.getElementsByTagName("script")[0];
+          i.parentNode.insertBefore(o, i);
+        };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('zf5w8m4z6hch');
+    </script>
+    <!-- End of Async Drift Code -->
+    <title>FAQs CHAT</title>
+    <link rel="stylesheet" href="chat.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="top_bar">
+        
+
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="assets/images/new logo.svg" alt="">
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/dietlogo.svg" alt="">
+            </div>
+            <ul>
+                <li><a href="./index.html" class="active">home</a></li>
+               
+                <li><a href="service.html">Service</a></li>
+                
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+    <div class="container">
+        <div class="chat_content">
+            <h3 class="header_text">
+                Chat with us
+            </h3>
+        </div>
+
+        
+            <section class="chat">
+                <div class="chat-box">
+                    <div class="chat-bubble">
+                        <p>Hi there! Welcome to Dietaries How can I help you today?</p>
+                    </div>
+                </div>
+    
+                <div class="chat-box">
+                    <div class="chat-bubble user">
+                        <p>What are your business hours?</p>
+                    </div>
+                </div>
+    
+                <div class="chat-box">
+                    <div class="chat-bubble">
+                        <p>Our business hours are Monday to Friday, 9am to 5pm.</p>
+                    </div>
+                </div>
+    
+                <div class="chat-box">
+                    <div class="chat-bubble user">
+                        <p>What payment methods do you accept?</p>
+                    </div>
+                </div>
+    
+                <div class="chat-box">
+                    <div class="chat-bubble">
+                        <p>We accept Visa, MasterCard, and PayPal,</p>
+                    </div>
+                </div>
+    
+                <!-- Add more chat bubbles for FAQs here -->
+                <div class="search-container">
+                    <input type="text" placeholder="Chat.................................">
+                    <button type="submit"><i class='bx bx-send'></i></button>
+                  </div>
+                
+            </section>
+        
+    </div>
+</body>
+</html>
+
+</body>
+</html>
